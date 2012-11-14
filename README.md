@@ -6,7 +6,9 @@
 
 Add this line to your application's Gemfile:
 
-    gem 'sortables'
+```ruby
+gem 'sortables'
+```
 
 And then execute:
 
@@ -18,12 +20,14 @@ Or install it yourself as:
 
 ## Usage
 
-    # you need an integer field on your model called position
-    rails g migration AddPositionToMyModels position:integer
+```ruby
+# you need an integer field on your model called position
+rails g migration AddPositionToMyModels position:integer
 
-    class MyModel < ActiveRecord::Base
-      sortable
-    end
+class MyModel < ActiveRecord::Base
+  sortable
+end
+```
 
 ## Contributing
 
