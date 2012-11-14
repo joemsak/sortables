@@ -17,6 +17,8 @@ Or install it yourself as:
     $ gem install sortables
 
 ## Usage
+  # you need an integer field on your model called position
+  rails g migration AddPositionToMyModels position:integer
 
   class MyModel < ActiveRecord::Base
     sortable
