@@ -1,5 +1,14 @@
 require "sortables/version"
+require "sortables/sortable"
 
 module Sortables
-  # Your code goes here...
+  module ClassMethods
+    def sortable
+      send :include, Sortables::Sortable
+    end
+  end
+
+  if defined?(ActiveRecord::Base)
+    ActiveRecord::Base.extend Sortables::ClassMethods
+  end
 end
