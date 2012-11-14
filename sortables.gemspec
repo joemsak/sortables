@@ -7,9 +7,9 @@ Gem::Specification.new do |gem|
   gem.name          = "sortables"
   gem.version       = Sortables::VERSION
   gem.authors       = ["Joe Sak"]
-  gem.email         = ["joe@joesak.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.email         = ["joe@neotericdesign.com"]
+  gem.description   = %q{Easily add sorting by an integer field on your ActiveRecord models}
+  gem.summary       = %q{(hopefully) painless positional sorting}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
