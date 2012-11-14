@@ -1,6 +1,6 @@
 # Sortables
 
-TODO: Write a gem description
+  Easily add sorting by an integer field on your ActiveRecord models
 
 ## Installation
 
