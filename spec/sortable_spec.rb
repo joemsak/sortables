@@ -5,11 +5,11 @@ class SomeSuchClass < ActiveRecord::Base
   sortable
 end
 
-class MigrateDatabase < ActiveRecord::Migration
-  unless table_exists?('some_such_classes')
-    create_table :some_such_classes do |t|
-      t.integer :position
-    end
+migrator = ActiveRecord::Migration
+
+unless migrator.table_exists?('some_such_classes')
+  migrator.create_table :some_such_classes do |t|
+    t.integer :position
   end
 end
 
