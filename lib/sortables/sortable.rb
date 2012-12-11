@@ -2,7 +2,7 @@ module Sortables
   module Sortable
     def self.included(base)
       base.extend ClassMethods
-      base.send(:default_scope, :order => :position)
+      base.send(:default_scope, :order => "#{base.table_name}.position")
       base.send(:before_create, :set_minimum_position)
       base.attr_accessible :position
     end
